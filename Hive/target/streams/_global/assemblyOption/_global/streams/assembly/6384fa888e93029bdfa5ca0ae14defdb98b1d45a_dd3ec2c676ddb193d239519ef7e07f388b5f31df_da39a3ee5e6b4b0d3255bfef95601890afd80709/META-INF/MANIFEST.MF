@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: hbutani
+Build-Jdk: 1.6.0_65
+Specification-Title: Hive Metastore
+Specification-Version: 0.13.0
+Specification-Vendor: The Apache Software Foundation
+Implementation-Title: Hive Metastore
+Implementation-Version: 0.13.0
+Implementation-Vendor-Id: org.apache.hive
+Implementation-Vendor: The Apache Software Foundation
+
