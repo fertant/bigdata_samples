@@ -1,0 +1,15 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/andrii/Git/bigdata_samples/Spark/app/target/scala-2.12/sample-project_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ua[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/scala-2.12/classes/ua[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/scala-2.12/classes/ua/bigdata[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/scala-2.12/classes/ua/bigdata/spark[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsCoordinates$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/scala-2.12/classes/ua/bigdata/spark/HotelsCoordinates$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsCoordinates$$typecreator4$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/scala-2.12/classes/ua/bigdata/spark/HotelsCoordinates$$typecreator4$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsCoordinates.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/scala-2.12/classes/ua/bigdata/spark/HotelsCoordinates.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

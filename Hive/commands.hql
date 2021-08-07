@@ -93,8 +93,6 @@ ALTER TABLE weather ADD PARTITION (wthr_date='2016-10-28') LOCATION '/weather/ye
 ALTER TABLE weather ADD PARTITION (wthr_date='2016-10-29') LOCATION '/weather/year=2016/month=10/day=29';
 ALTER TABLE weather ADD PARTITION (wthr_date='2016-10-30') LOCATION '/weather/year=2016/month=10/day=30';
 
-CREATE EXTERNAL TABLE expedia (id bigint, date_time string, site_name int, posa_continent int, user_location_country int, user_location_region int, user_location_city int, orig_destination_distance double, user_id int, is_mobile int, is_package int, channel int, srch_ci string, srch_co string, srch_adults_cnt int, srch_children_cnt int, srch_rm_cnt int, srch_destination_id int , srch_destination_type_id int, hotel_id string) STORED AS AVRO LOCATION '/expedia';
-
 CREATE TABLE expedia row format serde 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
     stored as inputformat
         'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
@@ -139,8 +137,8 @@ CREATE TABLE weather_hash AS SELECT w.lng, w.lat, w.avg_tmpr_c, w.wthr_date, has
 SELECT h.id, h.name, h.country, h.city, h.address, w.avg_tmpr_c, w.wthr_date FROM hotels_hash as h JOIN weather_hash as w ON (h.hash = w.hash) LIMIT 10;
 
 // Kafka export
-ADD JAR /Users/andrii/BigData/hive/tmp_lib/hadoop-client-3.3.1.jar
-CREATE EXTERNAL TABLE hotels_weather (id int, name string, country string, city string, address string, avg_tmpr_c double, wthr_date string) STORED BY 'org.apache.hadoop.hive.kafka.KafkaStorageHandler' TBLPROPERTIES ("kafka.topic" = "hotels", "kafka.bootstrap.servers" = "http://localhost:9092", "kafka.serde.class"="org.apache.hadoop.hive.serde2.avro.AvroSerDe");
+ADD JAR /Users/andrii/BigData/hive/tmp_lib/hadoop-client-3.3.1.jar;
+CREATE EXTERNAL TABLE hotels_weather (id int, name string, country string, city string, address string, avg_tmpr_c double, wthr_date string) STORED BY 'org.apache.hadoop.hive.kafka.KafkaStorageHandler' TBLPROPERTIES ("kafka.topic" = "hotels-hive", "kafka.bootstrap.servers" = "http://localhost:9094", "kafka.serde.class"="org.apache.hadoop.hive.serde2.avro.AvroSerDe");
 INSERT INTO TABLE hotels_weather 
   SELECT h.id, h.name, h.country, h.city, h.address, w.avg_tmpr_c, w.wthr_date 
   FROM hotels_hash as h 
