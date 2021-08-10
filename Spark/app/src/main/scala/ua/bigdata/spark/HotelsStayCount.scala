@@ -39,9 +39,6 @@ object HotelsStayCount {
      .withColumn("value", from_json(col("value"),schema))
      .select(col("value.*"))
 
-    // Read data from HDFS.
-    // val hotels = spark.read.format("csv").option("header", "true").load("hdfs://localhost:9000/hotels/*.csv")
-
     // Read expedia data from HDFS
     val expedia = spark.read.format("avro").load("hdfs://localhost:9000/expedia/*.avro")    
 
