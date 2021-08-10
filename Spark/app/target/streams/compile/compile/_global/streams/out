@@ -1,13 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/andrii/Git/bigdata_samples/Spark/app/src/main/scala/ua/bigdata/spark/HotelsBooking.scala:82:8: overloaded method value orderBy with alternatives:[0m
-[0m[[0m[31merror[0m] [0m[0m  (sortExprs: org.apache.spark.sql.Column*)org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (sortCol: String,sortCols: String*)org.apache.spark.sql.Dataset[org.apache.spark.sql.Row][0m
-[0m[[0m[31merror[0m] [0m[0m cannot be applied to (String, org.apache.spark.sql.Column)[0m
-[0m[[0m[31merror[0m] [0m[0m      .orderBy("Name", col("checkins").desc)[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/andrii/Git/bigdata_samples/Spark/app/src/main/scala/ua/bigdata/spark/HotelsStayCount.scala:196:8: value path is not a member of org.apache.spark.sql.streaming.DataStreamWriter[org.apache.spark.sql.Row][0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value path'?[0m
+[0m[[0m[31merror[0m] [0m[0m      .path("hdfs://localhost:9000/stay_by_type/")[0m
 [0m[[0m[31merror[0m] [0m[0m       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/andrii/Git/bigdata_samples/Spark/app/src/main/scala/ua/bigdata/spark/HotelsBooking.scala:91:8: overloaded method value orderBy with alternatives:[0m
-[0m[[0m[31merror[0m] [0m[0m  (sortExprs: org.apache.spark.sql.Column*)org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (sortCol: String,sortCols: String*)org.apache.spark.sql.Dataset[org.apache.spark.sql.Row][0m
-[0m[[0m[31merror[0m] [0m[0m cannot be applied to (String, org.apache.spark.sql.Column)[0m
-[0m[[0m[31merror[0m] [0m[0m      .orderBy("Name", col("checkins").desc)[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

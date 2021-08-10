@@ -6,6 +6,7 @@ import org.apache.spark.sql.types.{DateType, ArrayType, StringType, StructType}
 import java.sql.Date
 import java.time.{Duration, LocalDate}
 import org.apache.spark.sql.expressions.Window
+import org.apache.spark.sql.streaming.Trigger
 
 object HotelsBookings {
 

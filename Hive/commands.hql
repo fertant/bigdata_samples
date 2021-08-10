@@ -127,7 +127,6 @@ LOAD DATA INPATH '/expedia/part-00023-ef2b800c-0702-462d-b37f-5f2fb3a093d0-c000.
 LOAD DATA INPATH '/expedia/part-00024-ef2b800c-0702-462d-b37f-5f2fb3a093d0-c000.avro' INTO TABLE expedia;
 
 
-
 ADD JAR /Users/andrii/Git/bigdata_samples/Hive/target/scala-2.12/hive-udfs_2.12-1.0.0.jar;
 ADD JAR /Users/andrii/Git/bigdata_samples/Hive/target/geohash-1.4.0.jar;
 CREATE TEMPORARY FUNCTION hash AS 'ua.bigdata.hive.geo.Hash';

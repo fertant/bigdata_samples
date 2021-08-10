@@ -13,9 +13,11 @@ object HotelsCoordinates {
       .getOrCreate()
     import spark.implicits._    
     
+    // Read data from HDFS.
     val hotels = spark.read.format("csv").option("header", "true").load("hdfs://localhost:9000/hotels/*.csv")
     val weather = spark.read.format("parquet").load("hdfs://localhost:9000/weather/*/*/*/*.parquet")
     
+    // Generate hash for weather data.
     val hashWeather = weather
       .map(record => (
         record.getDouble(0),
@@ -25,6 +27,7 @@ object HotelsCoordinates {
         GeoHash.geoHashStringWithCharacterPrecision(record.getDouble(1), record.getDouble(0), 4),
       )).toDF("lng","lat","avg_tmpr_c","wthr_date","hash")
     
+    // Generate hash for hotels data.
     val hashHotels = hotels
       .filter("Latitude is not null")
       .filter("Longitude is not null")
@@ -41,6 +44,7 @@ object HotelsCoordinates {
         GeoHash.geoHashStringWithCharacterPrecision(record.getString(5).toDouble, record.getString(6).toDouble, 4),
       )).toDF("Id","Name","Country","City","Address","Latitude","Longitude","hash")
 
+    // Join hotels and weather data.
     val hotelsWeather = hashWeather
                           .join(hashHotels, hashWeather("hash") === hashHotels("hash"), "inner")
                           .drop("lng")
@@ -48,6 +52,8 @@ object HotelsCoordinates {
                           .drop("hash")
 
     hotelsWeather.show(5)
+    
+    // Write results into Kafka.
     hotelsWeather
       .select(to_json(struct(col("*"))).alias("value"))
       .write
