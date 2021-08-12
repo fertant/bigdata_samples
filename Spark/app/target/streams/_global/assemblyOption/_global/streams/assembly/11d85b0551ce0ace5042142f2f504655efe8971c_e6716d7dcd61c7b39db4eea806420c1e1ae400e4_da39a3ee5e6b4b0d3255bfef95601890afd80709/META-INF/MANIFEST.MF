@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: 14 (Oracle Corporation)
+Implementation-Title: elasticsearch-spark-20
+Implementation-Version: 7.14.0
+Implementation-URL: https://github.com/elastic/elasticsearch-hadoop
+Implementation-Vendor: Elastic
+Implementation-Vendor-Id: org.elasticsearch.hadoop
+Repository-Revision: b8a54b1394b59c0f138a13b856b77794d95a425c
+

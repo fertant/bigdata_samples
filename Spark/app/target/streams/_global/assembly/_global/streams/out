@@ -19,7 +19,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mMerging 'org/apache/spark/unused/UnusedStubClass.class' with strategy 'last'[0m
 [0m[[0m[0minfo[0m] [0m[0mStrategy 'discard' was applied to 10 files (Run the task at debug level to see details)[0m
 [0m[[0m[0minfo[0m] [0m[0mStrategy 'last' was applied to a file (Run the task at debug level to see details)[0m
-[0m[[0m[0mdebug[0m] [0m[0mSHA-1: 71d01e26ba22da84a7e000c027dcb754ca4f4a68[0m
+[0m[[0m[0mdebug[0m] [0m[0mSHA-1: 5779514c011f200b145c31e80cc3e1446a966e02[0m
 [0m[[0m[33mwarn[0m] [0m[0mIgnored unknown package option FixedTimestamp(Some(1262304000000))[0m
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/andrii/Git/bigdata_samples/Spark/app/target/scala-2.12/hotels_assembly_2.12-1.0.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
@@ -5197,14 +5197,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsCoordinates$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsCoordinates.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsCoordinates.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsStayCount$$typecreator4$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsStayCount$$typecreator4$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsStayCount$$typecreator5$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsStayCount$$typecreator5$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsStayCount$$typecreator9$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsStayCount$$typecreator9$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsStayCount$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsStayCount$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsStayCount.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsStayCount.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsStayCountElastic$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsStayCountElastic$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsStayCountElastic.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsStayCountElastic.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsStayCountHDFS$$typecreator4$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsStayCountHDFS$$typecreator4$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsStayCountHDFS$$typecreator5$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsStayCountHDFS$$typecreator5$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsStayCountHDFS$$typecreator9$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsStayCountHDFS$$typecreator9$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsStayCountHDFS$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsStayCountHDFS$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ua/bigdata/spark/HotelsStayCountHDFS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/andrii/Git/bigdata_samples/Spark/app/target/streams/_global/assemblyOption/_global/streams/assembly/28218ffc28d8a4ee2bc736e05201e7e44e9065b6_dir/ua/bigdata/spark/HotelsStayCountHDFS.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
