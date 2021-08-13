@@ -1,5 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/andrii/Git/bigdata_samples/Spark/app/src/main/scala/ua/bigdata/spark/HotelsStayCountElastic.scala:174:8: value start is not a member of org.apache.spark.sql.DataFrameWriter[org.apache.spark.sql.Row][0m
-[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value start'?[0m
-[0m[[0m[31merror[0m] [0m[0m      .start()[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/andrii/Git/bigdata_samples/Spark/app/src/main/scala/ua/bigdata/spark/HotelsBooking.scala:83:5: not found: value validChekin[0m
+[0m[[0m[31merror[0m] [0m[0m    validChekin.show(10)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -5,6 +5,7 @@ scalaVersion := "2.12.10"
 assemblyJarName := "hotels_assembly_2.12-1.0.jar"
 
 libraryDependencies ++= Seq(
+  "org.scalatest" %% "scalatest-funspec" % "3.2.9" % "test",
   "org.apache.spark" %% "spark-sql" % "3.1.2" % "provided",
   "org.apache.spark" %% "spark-sql-kafka-0-10" % "3.0.0" % Test,
   "org.apache.spark" %% "spark-avro" % "3.0.1",

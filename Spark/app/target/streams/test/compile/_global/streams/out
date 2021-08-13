@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/andrii/Git/bigdata_samples/Spark/app/src/test/scala/ua/bigdata/spark/HotelsBookingsTest.scala:26:27: recursive value idleDaysCount needs type[0m
+[0m[[0m[31merror[0m] [0m[0m      val idleDaysCount = idleDaysCount(spark, hotelsReservation)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
